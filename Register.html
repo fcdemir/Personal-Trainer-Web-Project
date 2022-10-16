@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="GYM, Workout, Training Program, Yoga, Fit, Exercise">
+    <meta name="description" content="LOGO Personal Trainer Website">
+    <meta name="author" content="Furkan Demir, fcdemir">
+    <link rel="icon" type="image/png" href="./content/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./content/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./content/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="./content/icons/favicon-180x180.png" sizes="180x180">
+    <title>Register Your Account</title>
+
+    <!-- CSS Only -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./content/css/responsive-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- FONTS Only -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;800&display=swap"
+        rel="stylesheet">
+
+    <!-- JS Only -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+
+
+<body class="registerBody d-flex flex-column justify-content-center align-items-center">
+
+    <header>
+        <nav class="container">
+            <div class="col-12 text-center">
+                <a href="./index.html">
+                    <img class="navMobileLogo" src="./content/img/logonav.png" alt="Navigator Logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- REGISTER ACCOUNT AREA -->
+        <div class="container d-flex justify-content-center align-items-center">
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-center py-5">
+
+                <div class="col-12 py-3">
+                    <input type="fullname" name="fullname" id="fullname" placeholder="FULL NAME">
+                    <input type="email" id="email" name="email" placeholder="E-MAIL">
+                    <input type="password" id="password" name="password" maxlength="12" pattern=".{8,12}" required title="8 to 12 characters" placeholder="PASSWORD">
+                    <input type="password" id="password" name="password" maxlength="12" pattern=".{8,12}" required title="8 to 12 characters" placeholder="PASSWORD AGAIN">
+                    <input type="tel" name="tel" id="tel" placeholder="PHONE NUMBER">
+                    <input type="datetime" name="birth" id="birth" placeholder="BIRTH DATE">
+                </div>
+                
+                <button class="registerButton2 w-100 text-white fw-bold py-3 mx-auto" id="registerButton2" type="registerButton2" onclick="location.href='account.html'">
+                    <a>REGISTER</a>
+                </button>
+
+                <p class="text-white text-center fw-regular py-3">YOUR REGISTRATION HAS BEEN SUCCESSFUL</p>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

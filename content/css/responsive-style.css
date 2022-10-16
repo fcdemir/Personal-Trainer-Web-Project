@@ -1,0 +1,78 @@
+
+
+@media (max-width: 768px) {
+
+    /* INDEX.HTML */
+
+    .navMobileLogo {
+        width: 75%;
+    }
+
+    .aboutImage {
+        width: 350px;
+        height: 350px;
+        z-index: 0;
+        border-radius: none;
+        background-image:none;
+        box-shadow: none;
+    }
+
+    .aboutImage img {
+        width: 350px;
+        text-align: center;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    
+    .aboutText {
+        margin-left: 0px;
+        margin: 0 auto;
+        max-width: auto;
+        height: auto;
+        border-radius: 50px;
+        background-image: linear-gradient(to left, #FAD961, #FF5ACD);
+        box-shadow: -20px 15px 30px rgba(0, 0, 0, 0.233);
+        padding: 3%;
+        padding-left: 0;
+        z-index: 5;
+    }
+
+    .aboutText p {
+        font-size: 1rem;
+    }
+
+    /* LOGIN.HTML */
+
+    .loginLogo {
+        width: 75%;
+    }
+
+    /* ACCOUNT.HTML */
+
+    .sideBar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 2% 0;
+        z-index: 999;
+    }
+
+    .mySideBar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        text-align:center;
+    }
+
+
+}

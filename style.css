@@ -1,0 +1,518 @@
+.bgred {
+    background-color: red;
+}
+
+.bgbl {
+    background-color: blue;
+}
+
+/* STABLE VALUES */
+
+html {
+    scroll-behavior: smooth;
+    /*background-image: linear-gradient(#808080 , #2B2B2B);*/
+    background-color: rgb(240, 240, 240);
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.noDeco {
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+}
+
+hr {
+    width: 100%;
+    border-top: 2px solid white;
+    margin: 0;
+    padding: 0;
+}
+
+.text-grey {
+    color: grey;
+}
+
+
+.customTitle {
+    background-image: linear-gradient(215deg, #FAD961, #F76B1C);
+    border-radius: 35px;
+    text-align: center;
+    letter-spacing: 15px;
+    padding: 10px 35px;
+    color: white;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.411);
+}
+
+
+/* NAVIGATOR */
+
+@keyframes opacityUp {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@keyframes opacityDown {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.navLogo {
+    height: 85px;
+}
+
+.navMobileLogo {
+    width: 25%;
+}
+
+.dropbtn {
+    border: none;
+    width: 35px;
+    border-radius: 100%;
+    background-color: orange;
+}
+  
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropdown-content {
+    display: none;
+    justify-content: right;
+    position: absolute;
+    background: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.headerIndex {
+    height: 100vh;
+}
+
+/* WELCOME */
+
+#welcome {
+    padding: 15% 0;
+}
+
+#welcome h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1;
+    color: rgb(172, 172, 172);
+    letter-spacing: 15px;
+    animation-name: welcome_container_h1;
+    animation-duration: 20s;
+    animation-iteration-count:infinite;
+    transition: 500ms;
+}
+
+#welcome h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 8px;
+    text-align: center;
+    color: rgb(129, 129, 129);
+}
+
+@keyframes welcome_container_h1 {
+    0%   {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+    }
+
+/* ABOUT AREA */
+
+.aboutImage {
+    width: 350px;
+    height: 350px;
+    z-index: 2;
+    border-radius: 100%;
+    background-image: linear-gradient(to right, #FAD961, #FF5ACD);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.233);
+}
+
+.aboutImage img {
+    width: 350px;
+    margin-bottom: 105px;
+    margin-left: 10px;
+}
+
+.aboutText {
+    margin-left: -150px;
+    max-width: 550px;
+    height: 300px;
+    border-radius: 50px;
+    background-image: linear-gradient(to left, #FAD961, #FF5ACD);
+    box-shadow: -20px 15px 30px rgba(0, 0, 0, 0.233);
+    padding: 3%;
+    padding-left: 23%;
+}
+
+.aboutText p {
+    font-size: .8rem;
+}
+
+
+/* SERVICES AREA */
+
+.serviceCard {
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.377);
+}
+
+
+/* MEMBERSHIP AREA */
+
+.memberCardOut {
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.518);
+    border-radius: 50px;
+}
+
+.memberCard {
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    border-radius: 35px;
+}
+
+.memberCard h5 {
+    color: #FAD961;
+}
+
+.memberButton {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #FFA200;
+    border-radius: 15px;
+    transition: 1s;
+    font-family: 'Red Hat Display', sans-serif;
+    border-style: none;
+}
+
+.memberButton:hover {
+    background-color: white;
+    color: black;
+    letter-spacing: 1px;
+}
+
+/* CONTACT AREA */
+
+input[type=text] {
+    width: 100%;
+    height: 35px;
+    padding: 7% 3%;
+    border-radius: 10px;
+    border-style: none;
+    margin: 5px 0;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: rgb(216, 216, 216);
+    color: black;
+}
+
+::placeholder {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    color: grey;
+}
+
+.textArea {
+    width: 100%;
+    padding: 5% 3%;
+    border-style: none;
+    border-radius: 10px;
+    margin: 5px 0;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: rgb(216, 216, 216);
+}
+
+.checkBox {
+    transform: scale(3);
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 5px;
+    border-style: none;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #FFA200;
+    transition: 1s;
+}
+
+input[type=submit]:hover {
+    background-color: green;
+}
+
+
+
+/* FOOTER AREA */
+
+footer a {
+    text-decoration: none;
+}
+
+
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+/* //////////// LOGIN PAGE //////////// */
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+
+.loginBody {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: darkslategray;
+}
+
+.loginLogo {
+    width: 25%;
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 15px 0;
+    border-style: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px 0;
+    transition: 1s;
+}
+
+input[type=email]:hover, input[type=password]:hover {
+    letter-spacing: 2px;
+}
+
+.loginButton {
+    width: 100%;
+    font-size: .8rem;
+    padding: 20px 25px;
+    border-style: none;
+    border-radius: 10px;
+    background-color:burlywood;
+}
+
+.registerButton {
+    width: 100%;
+    background-color:orange;
+    font-size: .8rem;
+    padding: 20px 25px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.loginButton:hover, .registerButton:hover {
+    background-color: black;
+    color: white;
+}
+
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+/* ////////// REGISTER PAGE /////////// */
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+
+
+.registerBody {
+    min-height:100vh;
+    padding: 5%;
+    background-color: black;
+}
+
+.registerLogo {
+    width: 25%;
+}
+
+input[type=fullname], input[type=email], input[type=tel], input[type=datetime]   {
+    width: 100%;
+    padding: 15px 0;
+    border-style: none;
+    border-radius: 10px;
+    text-align: center;
+    transition: 1s;
+    margin: 5px auto;
+}
+
+.registerButton2 {
+    background-color:orange;
+    font-size: .8rem;
+    border-style: none;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.registerButton2:hover {
+    background-color: darkgreen;
+}
+
+
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+/* /////////// ACCOUNT PAGE /////////// */
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+
+.accountBack {
+    border-radius: 35px;
+    background-color: rgb(18, 18, 18);
+}
+
+.accountPhoto {
+    border-radius: 100%;
+}
+
+.accountDelete {
+    background-color: darkred;
+    width: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    border-style: none;
+    border-radius: 20px;
+    margin: 0 auto;
+    color: white;
+    transition: .5s;
+}
+
+.accountDelete:hover {
+    background-color: orange;
+    color: black;
+}
+
+.trainingButton {
+    width: 100%;
+    background-color: darkred;
+    border-style: none;
+    border-radius: 20px;
+    color: white;
+    transition: .5s;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: auto;
+}
+
+.trainingButton:hover {
+    background-color: orange;
+    color: black;
+}
+
+.trainingCount {
+    width: 100%;
+    background-color:orange;
+    border-radius: 20px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: auto;
+}
+
+.memberInfo {
+    background-color: orange;
+    color: black;
+    border-radius: 15px;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.back-red {
+    background-color: darkred;
+    color: white;
+}
+
+.back-green {
+    background-color: darkgreen;
+    color: white;
+}
+
+
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+/* ///////////// RESET PAGE /////////// */
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+
+
+.resetBody {
+    width: 100%;
+    height: 100vh;
+    background-color: darkslateblue;
+}
+
+.resetButton {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-style: none;
+    background-color: white;
+    color: chocolate;
+}
+
+
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+/* /////////// PAYMENT PAGE /////////// */
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+
+
+.paymentBody {
+    width: 100%;
+    background-color: grey;
+}
+
+
+.paymentBack {
+    border-radius: 35px;
+    background-color:peru;
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.315);
+}
+
+.paymentButton {
+    width: 100%;
+    padding: 25px 0;
+    background-color: dodgerblue;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.paymentButton:hover {
+    background-color: rgb(94, 174, 255);
+}
+
+.planButton {
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    background-color: brown;
+}

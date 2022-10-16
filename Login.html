@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="GYM, Workout, Training Program, Yoga, Fit, Exercise">
+    <meta name="description" content="LOGO Personal Trainer Website">
+    <meta name="author" content="Furkan Demir, fcdemir">
+    <link rel="icon" type="image/png" href="./content/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./content/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./content/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="./content/icons/favicon-180x180.png" sizes="180x180">
+    <title>Login Your Account</title>
+
+    <!-- CSS Only -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./content/css/responsive-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- FONTS Only -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;800&display=swap"
+        rel="stylesheet">
+
+    <!-- JS Only -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+
+
+<body class="loginBody d-flex flex-column justify-content-center">
+    
+    <header>
+        <nav class="container pt-5">
+            <div class="col-12 text-center">
+                <a href="./index.html">
+                    <img class="navMobileLogo" src="./content/img/logonav.png" alt="Navigator Logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- LOGIN AND REGISTER AREA -->
+        <div class="container-fluid d-flex justify-content-center align-items-center pt-5">
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center py-5">
+
+                <div class="col-12">
+                    <input type="email" id="email" name="email" placeholder="E-MAIL">
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="PASSWORD">
+                </div>
+
+                <div class="col-12 d-flex flex-xl-row flex-lg-row flex-md-row flex-sm-column flex-column pt-2 pb-5 gap-2">
+                    
+                    <button class="loginButton" id="loginButton" type="loginButton" onclick="location.href='./Account.html'">
+                        <a>LOGIN</a>
+                    </button>
+
+                    <button class="registerButton" id="registerButton" type="registerButton"
+                        onclick="location.href='./Register.html'">
+                        <a>REGISTER</a>
+                    </button>
+
+                </div>
+
+                <a class="noDeco fw-light text-white" href="./Reset-password.html">Reset Password</a>
+
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

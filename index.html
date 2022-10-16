@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="GYM, Workout, Training Program, Yoga, Fit, Exercise">
+    <meta name="description" content="LOGO Personal Trainer Website">
+    <meta name="author" content="Furkan Demir, fcdemir">
+    <link rel="icon" type="image/png" href="./content/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./content/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./content/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="./content/icons/favicon-180x180.png" sizes="180x180">
+    <title>Personal Trainer</title>
+
+    <!-- CSS Only -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./content/css/responsive-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- FONTS Only -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONS Only -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- JS Only -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <header class="headerIndex d-flex align-items-center justify-content-center">
+        <script>
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 100) {
+                        $(".sticky").css("background", "rgba(39, 39, 39, 0.900)");
+                        $(".sticky").css("animation", "opacityUp 1s forwards");
+                        $("#mobile-nav").css("background", "rgba(39, 39, 39, 0.900)");
+                        $("nav a").css("color", "white");
+                        $(".dropdown-content").css("background", "rgba(39, 39, 39, 0.900)");
+                        $(".dropdown_content a").css("color", "white");
+                    }
+
+                    else {
+                        $(".sticky").css("background", "rgba(0, 0, 0, 0)");
+                        $(".sticky").css("animation", "opacityDown 1s forwards");
+                        $("#mobile-nav").css("background", "rgba(0, 0, 0, 0)");
+                        $("nav a").css("color", "grey");
+                        $(".dropdown-content").css("background", "rgba(39, 39, 39, 0)");
+                        $(".dropdown_content a").css("color", "white");
+                    }
+                })
+            })
+        </script>
+
+
+
+
+        <!-- WELCOME AREA -->
+        <div id="welcome">
+            <div class="container d-flex flex-column justify-content-center align-items-center">
+                <h1 class="text-center fw-bold display-2">WELCOME</h1>
+                <h6 class="text-center fw-lighter">The major stop to be trained</h6>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- NON-MOBILE NAVIGATOR -->
+
+    <nav class="sticky container-fluid d-xl-flex d-lg-flex d-md-flex d-sm-none d-none d-flex flex-row flex-wrap justify-content-center align-items-center py-3">
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-center align-items-center py-2">
+            <a href="index.html">
+                <img class="d-xl-block d-lg-block d-md-block d-sm-none d-none navLogo py-xl-0 py-lg-0 py-md-0 py-sm-3 py-3"
+                    src="./content/img/logonav.png" alt="Logo Navigator">
+            </a>
+        </div>
+
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+
+            <div
+                class="col-12 d-flex flex-wrap flex-xl-row flex-lg-row flex-md-row flex-sm-column flex-column justify-content-around align-items-center">
+                <a class="noDeco fw-bold" href="#about">ABOUT</a>
+                <a class="noDeco fw-bold" href="#services">SERVICES</a>
+                <a class="noDeco fw-bold" href="#membership">MEMBERSHIP</a>
+                <a class="noDeco fw-bold" href="#contact">CONTACT</a>
+
+                <div class="nav-dropdown">
+                    <img class="dropbtn" src="./content/img/account_circle_white_36dp.svg" alt="Membership Menu">
+                    <div class="dropdown-content">
+                        <a href="Login.html">LOGIN</a>
+                        <a href="Register.html">REGISTER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- NON-MOBILE NAVIGATOR ENDS -->
+
+     <!-- MOBILE NAVIGATOR -->
+
+     <script>
+        function openBar() {
+          document.getElementById("mySideBar").style.width = "100%";
+        }
+        
+        function closeBar() {
+          document.getElementById("mySideBar").style.width = "0";
+        }
+    </script>
+
+
+    <nav id="mobile-nav" class="container-fluid sideBar d-xl-none d-lg-none d-md-none d-sm-block d-block">
+    
+        <div class="py-3" onclick="openBar()">
+            <span class="material-symbols-outlined text-grey">menu_open</span>
+        </div>
+
+        <div id="mySideBar" class="mySideBar d-flex flex-column align-items-center justify-content-around py-5">
+
+            <a href="javascript:void(0)" onclick="closeBar()">
+                <span class="material-symbols-outlined">close</span>
+            </a>
+                <a class="noDeco fw-bold" href="#about">ABOUT</a>
+                <a class="noDeco fw-bold" href="#services">SERVICES</a>
+                <a class="noDeco fw-bold" href="#membership">MEMBERSHIP</a>
+                <a class="noDeco fw-bold" href="#contact">CONTACT</a>
+                <a class="noDeco fw-bold" href="./Login.html">LOGIN</a>
+                <a class="noDeco fw-bold" href="./Register.html">REGISTER</a>
+        
+        </div>
+
+    </nav>
+
+    <!-- MOBILE NAVIGATOR ENDS -->
+
+    <main>
+
+        <!-- ABOUT AREA -->
+        <div id="about"></div>
+        <div class="container py-5 my-5">
+
+            <div class="col-12 d-flex flex-row align-items-center justify-content-around py-5 my-5">
+                <hr class="mx-2 d-xl-block d-lg-block d-md-block d-sm-none d-none">
+                <p class="customTitle text-nowrap mx-2">ABOUT</p>
+            </div>
+
+            <div class="row d-flex flex-row justify-content-around align-items-center">
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-center align-items-xl-center align-items-lg-center align-items-md-center align-items-sm-center align-items-center">
+                    <div class="aboutImage d-flex align-items-center">
+                        <img src="./content/img/ovaltrainer.png" alt="Trainer">
+                    </div>
+                </div>
+
+                <div
+                    class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-center align-items-center">
+                    <div class="aboutText d-flex flex-column align-items-xl-start align-items-lg-start align-items-md-start align-items-sm-center align-items-center justify-content-center">
+                        <h1 class="fw-bold text-white">WHO?</h1>
+                        <p class="fw-light text-xl-start text-lg-start text-md-start text-sm-center text-center text-white p-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iusto nam nostrum qui alias ratione saepe dolores recusandae nihil incidunt
+                            architecto! Explicabo harum iusto neque vitae eius consequatur, impedit, quo distinctio
+                            delectus incidunt adipisci amet tenetur porro eligendi voluptate ex velit nisi nostrum iure
+                            pariatur! Voluptas dolore incidunt quis at ad architecto, quaerat porro, possimus fuga,
+                            nobis nesciunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="services"></div>
+        <div class="container">
+
+            <div class="col-12 d-flex flex-row align-items-center justify-content-around py-5 my-5">
+                <p class="customTitle text-nowrap mx-2">SERVICES</p>
+                <hr class="mx-2 d-xl-block d-lg-block d-md-block d-sm-none d-none">
+            </div>
+
+            <div class="row d-flex justify-content-center align-items-center gap-5">
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 p-0 m-0 text-center">
+                    <div class="serviceCard mb-4">
+                        <img class="img-fluid" src="./content/img/services-1.png" alt="ServicesGaining">
+                    </div>
+                    <h6 class="fw-regular text-grey">WEIGHT ADJUSTMENT</h6>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 p-0 m-0 text-center">
+                    <div class="serviceCard mb-4">
+                        <img class="img-fluid" src="./content/img/services-2.png" alt="ServicesGaining">
+                    </div>
+                    <h6 class="fw-regular text-grey">SUPPORT SERVICE</h6>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 p-0 m-0 text-center">
+                    <div class="serviceCard mb-4">
+                        <img class="img-fluid" src="./content/img/services-3.png" alt="ServicesGaining">
+                    </div>
+                    <h6 class="fw-regular text-grey">REMOTE LESSONS</h6>
+                </div>
+            </div>
+
+            <div class="col-12 text-center py-5 my-5">
+                <h1 class="fw-bold text-black">GET YOUR ESSENTIAL NEEDS RIGHT AWAY</h1>
+                <p class="fw-lighter">In the direction of your requests, you might want to get training service from
+                    professional
+                    hands! If so, you are totally in the right place. Along with different kinds of training services
+                    that I serv, you can choose which one is suitable for you and start right away! Please feel free
+                    to ask by contacting me! </p>
+            </div>
+        </div>
+        </div>
+
+
+
+        <!-- MEMBERSHIP AREA  -->
+
+        <div id="membership"></div>
+        <div class="container">
+
+            <div class="col-12 d-flex flex-row align-items-center justify-content-around py-5 my-5">
+                <hr class="mx-2 d-xl-block d-lg-block d-md-block d-sm-none d-none">
+                <p class="customTitle text-nowrap mx-2">MEMBERSHIP</p>
+            </div>
+
+            <div class="row d-flex flex-row gap-5 justify-content-center align-items-center">
+
+                <div class="memberCardOut p-3 m-1 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="memberCard px-3 py-5">
+                        <h3 class="text-white fw-bold text-center">Daily Plan</h3>
+                        <h5 class="fw-bold text-center display-3">40€</h5>
+                        <p class="text-center fw-lighter text-white">
+                            <br>1 Hour Training Service
+                            <br>Free Consulting
+                            <br>&nbsp;
+                            <br>&nbsp;
+                            <br>&nbsp;
+                            <br>&nbsp;
+                        </p>
+
+                        <a href="Extension.html">
+                            <button class="memberButton fw-bold">
+                                GET SCHEDULE
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="memberCardOut p-3 m-1 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="memberCard px-3 py-5">
+                        <h3 class="text-white fw-bold text-center">Weekly Plan</h3>
+                        <h5 class="fw-bold text-center display-3">180€</h5>
+                        <p class="text-center fw-lighter text-white">
+                            <br>5 Hours Training Service
+                            <br>Free Consulting
+                            <br>Flexible Plan
+                            <br>&nbsp;
+                            <br>&nbsp;
+                            <br>&nbsp;
+                        </p>
+
+                        <a href="Extension.html">
+                            <button class="memberButton fw-bold">GET SCHEDULE</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="memberCardOut p-3 m-1 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="memberCard px-3 py-5">
+                        <h3 class="text-white fw-bold text-center">Monthly Plan</h3>
+                        <h5 class="fw-bold text-center display-3">450€</h5>
+                        <p class="text-center fw-lighter text-white">
+                            <br>20 Hours Training Service
+                            <br>Training Program
+                            <br>Remote Workout
+                            <br>Nutritional Informing
+                            <br>Getting Oversize
+                            <br>&nbsp;
+                        </p>
+
+                        <a href="Extension.html">
+                            <button class="memberButton fw-bold">GET SCHEDULE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex flex-row flex-wrap justify-content-center align-items-center py-5 my-5">
+
+                <div
+                    class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-xl-start text-lg-start text-md-start text-sm-center text-center">
+                    <img class="img-fluid" src="./content/img/logonav.png" alt="MembershipLogo">
+                </div>
+
+                <div
+                    class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 text-xl-end text-lg-end text-md-end text-sm-center text-center py-3">
+                    <h4 class="fw-bold text-black">TO BE TRAINED AS A PROFESSIONAL, WE OFFER YOU SOME OPTIONS!</h4>
+                    <h6 class="fw-lighter text-black py-2">GET RESERVATION AND START RIGHT AWAY!</h6>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- CONTACT AREA -->
+
+        <div id="contact"></div>
+        <div class="container py-xl-5 py-lg-5 py-md-5">
+
+            <div class="col-12 d-flex flex-row align-items-center justify-content-around pb-5 mb-5">
+                <hr class="mx-2 d-xl-block d-lg-block d-md-block d-sm-none d-none">
+                <p class="customTitle text-nowrap mx-3">CONTACT US</p>
+            </div>
+
+            <div class="col-12">
+
+                <h1 class="text-center fw-bold">Be in touch now!</h1>
+
+                <div id="contactPage">
+                    <div class="contactPage container d-flex justify-content-center align-items-center">
+
+                        <div class="row">
+
+                            <div class="col-12">
+                                <h1
+                                    class="text-white text-center fw-bold display-3 pb-xl-1 pb-lg-1 pb-md-2 pb-sm-2 pb-3">
+                                    Contact Me</h1>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 m-auto">
+                                <form method="POST" name="contactform">
+
+                                    <div class="col-12">
+                                        <input type="text" id="name" name="name" placeholder="Contact Name">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <input type="text" id="email" name="email" placeholder="E-Mail">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <textarea class="textArea" name="message" id="message" cols="68" rows="10"
+                                            placeholder="Message"></textarea>
+                                    </div>
+
+                                    <div class="col-12 d-flex justify-content-around align-items-center py-4 px-4">
+                                        <input class='checkBox me-4' type="checkbox" name="checkbox" id="checkbox"
+                                            value="yes">
+                                        <p class="text-black fw-light p-0 m-0">I accept sharing my information with
+                                            this website.</p>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <input class="fw-bold text-black" type="submit" value="Submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="container py-5">
+            <div class="row pt-5">
+                <div
+                    class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-row flex-wrap justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-center align-items-center py-5">
+
+                    <img class="w-50 py-3" src="./content/img/logonav.png" alt="FooterLogo">
+                    <p class="fw-light text-grey">
+                        LOGO OFFICIAL WEBSITE
+                        <br>&copy; Copyright 2021 - Ireland
+                        <br>All rights reserved
+                    </p>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column py-5 justify-content-center">
+
+                    <h5 class="fw-bold text-black text-xl-end text-lg-end text-md-end text-sm-center text-center">Social
+                        Accounts;</h5>
+
+                    <div
+                        class="col-12 d-flex flex-row flex-wrap justify-content-xl-end justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/#/">
+                            <img src="./content/img/Instagram.png" alt="Instagram">
+                        </a>
+
+                        <a href="https://facebook.com/#">
+                            <img src="./content/img/Facebook.png" alt="Facebook">
+                        </a>
+
+                        <a href="https://www.youtube.com/channel/#">
+                            <img src="./content/img/Youtube.png" alt="Youtube">
+                        </a>
+
+                        <a href="https://linkedin.com/#">
+                            <img src="./content/img/Linkedin.png" alt="Linkedin">
+                        </a>
+
+                        <a href="https://skype.com/#">
+                            <img src="./content/img/Skype.png" alt="Skype">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
